@@ -3,5 +3,9 @@
     <h1>Серии марки {{ model.name }}:</h1>
     {% for serie in series %}
         <h2 style="margin-left: 100px;">{{ serie.name }}</h2>
+        <h2 style="margin-left: 100px;">{{ serie.model }}</h2>
+        <h2 style="margin-left: 100px;">{{ serie.engine }}</h2>
+        <h2 style="margin-left: 100px;">{{ serie.hp }}</h2>
+        <h2 style="margin-left: 100px;">{{ serie.nm }}</h2>
     {% endfor %}
 {% endblock %}

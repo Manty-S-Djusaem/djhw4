@@ -15,6 +15,10 @@ class Model(models.Model):
 class Series(models.Model):
     name = models.CharField(max_length=100)
     model = models.ForeignKey(Model, on_delete=models.CASCADE)
+    engine = models.CharField(max_length=200, null=True, blank=True)
+    hp = models.IntegerField(verbose_name="лошадиные силы", null=True, blank=True)
+    nm = models.IntegerField(blank=True, null=True, verbose_name="мощность")
+
 
     def __str__(self):
         return self.name
