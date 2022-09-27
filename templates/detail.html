@@ -1,0 +1,7 @@
+{% extends 'main.html' %}
+{% block series %}
+    <h1>Серии марки {{ model.name }}:</h1>
+    {% for serie in series %}
+        <h2 style="margin-left: 100px;">{{ serie.name }}</h2>
+    {% endfor %}
+{% endblock %}
